@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "nombre": "Espada",
+      "descripcion": "Para atacar"
+    },
+    {
+      "id": 2,
+      "nombre": "Escudo",
+      "descripcion": "Para defenderte"
+    },
+    {
+      "id": 3,
+      "nombre": "Casco",
+      "descripcion": "Para proteger tu cabeza"
+    },
+    {
+      "id": 4,
+      "nombre": "Pechera",
+      "descripcion": "Para proteger tu pecho"
+    },
+    {
+      "id": 5,
+      "nombre": "Botas",
+      "descripcion": "Para proteger tus pies"
+    },
+    {
+      "id": 6,
+      "nombre": "Pantalon",
+      "descripcion": "Para proteger tus piernas"
+    },
+    {
+      "id": 7,
+      "nombre": "Cuchillo",
+      "descripcion": "En caso no puedas usar tu espada"
+    },
+    {
+      "id": 8,
+      "nombre": "Arco",
+      "descripcion": "Para disparar flechas"
+    }
+]

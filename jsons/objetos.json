@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "nombre": "Espada",
+      "descripcion": "Para atacar"
+    },
+    {
+      "id": 2,
+      "nombre": "Escudo",
+      "descripcion": "Para defenderte"
+    },
+    {
+      "id": 3,
+      "nombre": "Casco",
+      "descripcion": "Para proteger tu cabeza"
+    },
+    {
+      "id": 4,
+      "nombre": "Pechera",
+      "descripcion": "Para proteger tu pecho"
+    },
+    {
+      "id": 5,
+      "nombre": "Botas",
+      "descripcion": "Para proteger tus pies"
+    },
+    {
+      "id": 6,
+      "nombre": "Pantalon",
+      "descripcion": "Para proteger tus piernas"
+    },
+    {
+      "id": 7,
+      "nombre": "Cuchillo",
+      "descripcion": "En caso no puedas usar tu espada"
+    },
+    {
+      "id": 8,
+      "nombre": "Arco",
+      "descripcion": "Para disparar flechas"
+    },
+    {
+      "id": 9,
+      "nombre": "Flecha",
+      "descripcion": "Para usarlo con el arco"
+    },
+    {
+      "id": 10,
+      "nombre": "Collar",
+      "descripcion": "Para aumentar tus estadisticas"
+    },
+    {
+      "id": 11,
+      "nombre": "Anillo",
+      "descripcion": "Para aumentar tus estadisticas"
+    },
+    {
+      "id": 12,
+      "nombre": "Pulcera",
+      "descripcion": "Para aumentar tus estadisticas"
+    },
+    {
+      "id": 13,
+      "nombre": "Aretes",
+      "descripcion": "Para aumentar tus estadisticas"
+    },
+    {
+      "id": 14,
+      "nombre": "Pico",
+      "descripcion": "Para minar"
+    },
+    {
+      "id": 15,
+      "nombre": "Capa",
+      "descripcion": "Para aumentar tus estadisticas"
+    }
+]
