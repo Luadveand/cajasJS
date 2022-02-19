@@ -3,22 +3,22 @@ let caja = cajas.Caja;
 let inventarios = require('./inventario.js')
 let inventario = inventarios.Inventario
 
-class Juego{
-    constructor(){
+class Juego {
+    constructor() {
         this.invent = new inventario();
     }
-    startGame () {
+    startGame() {
         console.clear();
         const prompt = require('prompt-sync')();
         let trigger = false
         let opt;
         console.log('Bienvenido a cajas! \n')
-        do{
+        do {
             console.log('Para jugar seleccione 1\nPara ver tu inventario seleccione 2\nPara salir seleccione 0 o presione ENTER')
             let prompt = require('prompt-sync')();
             let alt = prompt();
             opt = Number(alt)
-            switch(opt){
+            switch (opt) {
                 case 0:
                     trigger = true
                     break;

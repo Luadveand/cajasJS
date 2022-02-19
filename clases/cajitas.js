@@ -8,7 +8,7 @@ class Caja {
             const datos = fs.readFileSync('jsons/objetos.json', 'utf8')
             const objetos = JSON.parse(datos);
             for (var i = 0; i < objetos.length; i++)
-                this.arreglo.push(new objeto(objetos.at(i).id, objetos.at(i).nombre, objetos.at(i).descripcion));
+                this.arreglo.push(new objeto(objetos.at(i).id, objetos.at(i).nombre, objetos.at(i).descripcion, objetos.at(i).precio));
         } catch (err) {
             console.error(err)
         }
