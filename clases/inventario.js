@@ -17,7 +17,6 @@ class Inventario {
     }
 
     updateInventory = () => {
-        //const data = {}
         const data = []
         for (let i = 0; i < this.arreglo.length; i++)
             data.push(this.arreglo.at(i))
@@ -26,7 +25,6 @@ class Inventario {
 
     addObject(obj) {
         this.arreglo.push(obj);
-        //console.log(obj.nombre)
     }
 
     showInvPos = (num) => {
@@ -41,6 +39,17 @@ class Inventario {
                 console.log(i + 1 + '. ' + this.arreglo.at(i).nombre)
             }
         }
+    }
+
+    sellObject(num){
+        if (this.arreglo.length === 0) console.log('No hay objetos')
+        else  {
+            if (num > this.arreglo.length) 
+            else {
+                 
+            }
+        }
+        
     }
 
 };
