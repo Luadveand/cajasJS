@@ -22,7 +22,8 @@ class Caja {
         if (dado <= 60) premio = this.getRandomN(0, 5)
         else if (dado > 60 && dado <= 80) premio = this.getRandomN(5, 10)
         else premio = this.getRandomN(10, 15)
-        console.log("Tu premio es: " + this.arreglo.at(premio).nombre)
+        //console.log("Tu premio es: " + this.arreglo.at(premio).nombre)
+        return this.arreglo.at(premio)
     }
 }
 

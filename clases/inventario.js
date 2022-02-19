@@ -11,20 +11,34 @@ class Inventario{
             for (var i = 0; i < objetos.length; i++)
                 this.arreglo.push(new objeto(objetos.at(i).id, objetos.at(i).nombre, objetos.at(i).descripcion));
         } catch (err) {
-            console.error(err)
+            //console.error(err)
         }
     }
     
     addObject (obj) {
         this.arreglo.push(obj);
+        //console.log(obj.nombre)
     }
 
-    updateInventory = () =>{
-        const data = {}
-        data.table = []
+    updateInventory = () => {
+        //const data = {}
+        const data = []
         for (let i = 0; i<this.arreglo.length; i++)
-            data.table.push(this.arreglo.at(i))
+            data.push(this.arreglo.at(i))
         fs.writeFileSync('jsons/inventario.json', JSON.stringify(data))
+    }
+
+    showInvPos = (num) => {
+        if (this.arreglo.at(num) === undefined) return 'no existe' 
+         else return this.arreglo.at(num).nombre
+    } 
+    
+    mostrarTodos(){
+        for (let i = 0; i<this.arreglo.length; i++){
+            if (this.arreglo.at(i) === undefined) console.log('no existe')
+            else console.log(this.arreglo.at(i))
+        }
+            
     }
 
 };
