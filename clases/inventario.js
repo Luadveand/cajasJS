@@ -26,7 +26,6 @@ class Inventario {
 
     addObject(obj) {
         this.arreglo.push(obj);
-
         //console.log(obj.nombre)
     }
 
