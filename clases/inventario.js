@@ -2,8 +2,9 @@ let objetos = require('./objeto.js');
 let objeto = objetos.Objeto;
 const fs = require('fs');
 const { table } = require('console');
-class Inventario{
+class Inventario {
     constructor() {
+        this.monedero = 100
         this.arreglo = []
         try {
             const datos = fs.readFileSync('jsons/inventario.json', 'utf8')
@@ -14,31 +15,34 @@ class Inventario{
             //console.error(err)
         }
     }
-    
-    addObject (obj) {
-        this.arreglo.push(obj);
-        //console.log(obj.nombre)
-    }
 
     updateInventory = () => {
         //const data = {}
         const data = []
-        for (let i = 0; i<this.arreglo.length; i++)
+        for (let i = 0; i < this.arreglo.length; i++)
             data.push(this.arreglo.at(i))
         fs.writeFileSync('jsons/inventario.json', JSON.stringify(data))
     }
 
+    addObject(obj) {
+        this.arreglo.push(obj);
+
+        //console.log(obj.nombre)
+    }
+
     showInvPos = (num) => {
-        if (this.arreglo.at(num) === undefined) return 'no existe' 
-         else return this.arreglo.at(num).nombre
-    } 
-    
-    mostrarTodos(){
-        for (let i = 0; i<this.arreglo.length; i++){
-            if (this.arreglo.at(i) === undefined) console.log('no existe')
-            else console.log(this.arreglo.at(i))
+        if (this.arreglo.at(num) === undefined) return 'no existe'
+        else return this.arreglo.at(num).nombre
+    }
+
+    mostrarTodos() {
+        if (this.arreglo.length === 0) console.log('No hay objetos')
+        else {
+            for (let i = 0; i < this.arreglo.length; i++) {
+                console.log(i + 1 + '. ' + this.arreglo.at(i).nombre)
+            }
         }
-            
+
     }
 
 };
