@@ -40,7 +40,6 @@ class Inventario {
                 console.log(i + 1 + '. ' + this.arreglo.at(i).nombre)
             }
         }
-
     }
 
     sellObject() {
@@ -53,17 +52,17 @@ class Inventario {
             let prompt = require('prompt-sync')();
             let alt = prompt();
             let opt = Number(alt)
-            if (this.arreglo.at(opt) === undefined || opt === 0) console.log('no existe')
+            if (this.arreglo.at(opt-1) === undefined || opt === 0) console.log('no existe')
             else {
-                this.monedero += this.arreglo.at(opt).precio;
-                this.arreglo.splice(opt - 1, 1);
+                this.monedero = this.monedero + Number(this.arreglo.at(opt-1).precio);
+                console.log('El articulo '+this.arreglo.at(opt-1).nombre + ' ha sido vendido y tienes un total de '+ this.monedero + ' monedas')
+                this.arreglo.splice(opt-1, 1);
             }
-
         }
     }
 
     showMoney() {
-        console.log('Tienes ' + this.monedero + ' monedas en tu monedero')
+        console.log('Tienes ' + this.monedero + ' monedas')
     }
 
 };

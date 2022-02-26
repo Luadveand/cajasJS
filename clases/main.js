@@ -13,7 +13,7 @@ class Juego {
         let opt;
         console.log('Bienvenido a cajas! \n')
         do {
-            console.log('Para jugar seleccione 1\nPara ver tu inventario seleccione 2\nPara salir seleccione 0 o presione ENTER')
+            console.log('Para jugar seleccione 1\nPara ver tu inventario seleccione 2\nPara vender un objeto seleccione 3\nPara salir seleccione 0 o presione ENTER')
             let prompt = require('prompt-sync')();
             let alt = prompt();
             opt = Number(alt)
@@ -32,6 +32,7 @@ class Juego {
                 case 2:
                     console.clear();
                     this.invent.showAll();
+                    this.invent.showMoney();
                     console.log('')
                     break;
                 case 3:
@@ -40,9 +41,6 @@ class Juego {
                     console.log('');
                     break;
                 case 4:
-                    console.clear();
-                    this.invent.showMoney();
-                    console.log('');
                     break;
             }
         }
