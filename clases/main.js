@@ -9,7 +9,6 @@ class Juego {
     }
     startGame() {
         console.clear();
-        const prompt = require('prompt-sync')();
         let trigger = false
         let opt;
         console.log('Bienvenido a cajas! \n')
@@ -32,8 +31,18 @@ class Juego {
                     break;
                 case 2:
                     console.clear();
-                    this.invent.mostrarTodos();
+                    this.invent.showAll();
                     console.log('')
+                    break;
+                case 3:
+                    console.clear();
+                    this.invent.sellObject();
+                    console.log('');
+                    break;
+                case 4:
+                    console.clear();
+                    this.invent.showMoney();
+                    console.log('');
                     break;
             }
         }
